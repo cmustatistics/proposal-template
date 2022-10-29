@@ -70,12 +70,12 @@
   \fancyhead{}
 
   \ifdefined\@shorttitle
-    \fancyhead[CO]{\textsc{\MakeLowercase{\@shorttitle}}}
+    \fancyhead[CO]{\textit{\@shorttitle}}
   \else
-    \fancyhead[CO]{\textsc{\MakeLowercase{\@title}}}
+    \fancyhead[CO]{\textit{\@title}}
   \fi
 
-  \fancyhead[CE]{\textsc{\MakeLowercase{\@author}}}
+  \fancyhead[CE]{\textit{\@author}}
 
   \fancyhead[LE,RO]{\thepage}
 
