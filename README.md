@@ -19,13 +19,22 @@ To use this template, you can either:
 Once you have the template on your computer, open `proposal.tex` and follow the
 instructions inside.
 
+## Reproducible reports with embedded R code
+
 If you'd like to make a reproducible report with R code embedded inside, the
-[knitr](https://yihui.org/knitr/) package supports R code in LaTeX files. Save
-`proposal.tex` as `proposal.Rnw` and open it in RStudio. R code chunks can be
-written like this:
+[knitr](https://yihui.org/knitr/) package supports R code in LaTeX files. This
+works much like R Markdown, but entirely within LaTeX. RStudio supports this
+format and can automatically generate a PDF from the source code.
+
+Save `proposal.tex` as `proposal.Rnw` and open it in RStudio. R code chunks can
+be written like this:
 
 ```
-<<chunk-name, echo=FALSE>>=
+<<chunk-name>>=
+#| echo: FALSE
+#| fig.cap: "Caption for your figure"
+#| fig.width: 6
+#| fig.height: 4
 # Your R code goes here
 library(ggplot2)
 
@@ -34,5 +43,9 @@ ggplot(cars, aes(x = speed, y = dist)) +
 @
 ```
 
-This works much like R Markdown, but entirely within LaTeX. RStudio has a button
-to run the code and generate a PDF.
+This chunk generates a figure. This is automatically turned into a numbered
+figure in LaTeX, and you can refer to it as `Figure \ref{fig:chunk-name}`. There
+are a variety of [chunk options available](https://yihui.org/knitr/options/)
+that can be used to control how the figure is shown, though note the
+documentation shows the syntax for R Markdown, not for LaTeX. In LaTeX, options
+can be used as shown above.
