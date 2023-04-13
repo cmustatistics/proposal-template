@@ -26,6 +26,7 @@
 
 % Fonts
 \RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern} % default to Latin Modern for better character support
 
 % Typesetting options
 \RequirePackage{microtype}
