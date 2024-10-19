@@ -110,7 +110,7 @@
   {
     \raggedright
     \begin{center}
-      \includegraphics[width=3.5in]{cmu-wordmark-horizontal-r.pdf} \\
+      \includegraphics[width=3.5in,alt={Carnegie Mellon wordmark}]{cmu-wordmark-horizontal-r.pdf} \\
       {\Large Department of Statistics \& Data Science}\\[4ex]
       {\Large \thedocumenttype}\\[4ex]
       \ifdraft{\draftmark\\}{}
