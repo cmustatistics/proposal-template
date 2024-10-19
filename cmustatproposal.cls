@@ -3,7 +3,7 @@
 % Alex Reinhart, 2022
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{cmustatthesis}[2022/09/03 cmustatproposal]
+\ProvidesClass{cmustatproposal}[2022/09/03 cmustatproposal]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 
@@ -62,8 +62,7 @@
     pdftitle={\@title},
     pdfauthor={\@author},
     pdfsubject={Department of Statistics and Data Science, Carnegie Mellon University},
-    pdfpagelayout=SinglePage,
-    bookmarksopen=False
+    pdfpagelayout=SinglePage
   }
 
     % Page headers
