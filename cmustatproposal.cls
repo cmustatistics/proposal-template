@@ -150,4 +150,4 @@
   \newgeometry{margin=#1}%
   \begin{landscape}}{%
   \end{landscape}%
-  \restoregeometry}
+  \aftergroup\restoregeometry}
